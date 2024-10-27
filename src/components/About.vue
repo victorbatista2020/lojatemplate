@@ -21,12 +21,7 @@
                 </div>
             </div>
 
-            <div class="navigation">
-                <label for="slide1" class="nav-dot"></label>
-                <label for="slide2" class="nav-dot"></label>
-                <label for="slide3" class="nav-dot"></label>
-                <label for="slide4" class="nav-dot"></label>
-            </div>
+
         </div>
     </div>
 </template>
@@ -42,11 +37,11 @@ export default defineComponent({
         const totalSlides = 4;
 
         function changeSlide() {
-            currentSlide = (currentSlide % totalSlides) + 1; 
+            currentSlide = (currentSlide % totalSlides) + 1;
             const slideId = `slide${currentSlide}`;
             const radioButton = document.getElementById(slideId) as HTMLInputElement;
             if (radioButton) {
-                radioButton.checked = true; 
+                radioButton.checked = true;
             }
         }
 
@@ -72,7 +67,7 @@ export default defineComponent({
     position: relative;
     max-width: 1000px;
     margin: auto;
-    overflow: hidden; 
+    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -82,8 +77,8 @@ export default defineComponent({
 
 img {
     width: 100%;
-    height: 400px; 
-    border-radius: 10px; 
+    height: 400px;
+    border-radius: 10px;
 }
 
 .slides {
@@ -99,53 +94,19 @@ img {
     text-align: center;
 }
 
-#slide1:checked ~ .slides {
+#slide1:checked~.slides {
     transform: translateX(0);
 }
 
-#slide2:checked ~ .slides {
+#slide2:checked~.slides {
     transform: translateX(-100%);
 }
 
-#slide3:checked ~ .slides {
+#slide3:checked~.slides {
     transform: translateX(-200%);
 }
 
-#slide4:checked ~ .slides {
+#slide4:checked~.slides {
     transform: translateX(-300%);
 }
-
-.navigation {
-    position: absolute; 
-    bottom: 20px;
-    left: 50%; 
-    transform: translateX(-50%); 
-    text-align: center;
-    z-index: 10; 
-}
-
-.nav-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #ddd;
-    border: 2px solid #020202;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.nav-dot:hover {
-    background-color: #bdb8cea4;
-}
-
-
-#slide1:checked ~ .navigation .nav-dot:nth-child(1),
-#slide2:checked ~ .navigation .nav-dot:nth-child(2),
-#slide3:checked ~ .navigation .nav-dot:nth-child(3),
-#slide4:checked ~ .navigation .nav-dot:nth-child(4) {
-    background-color: #db0000; 
-}
 </style>
-
