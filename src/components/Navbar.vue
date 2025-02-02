@@ -3,7 +3,7 @@
         <nav class="nav-bar">
             <div class="logo">
                 <a href="#about" class="nav-link">
-                    <h1> Cabelereiro template</h1>
+                    <h1> Salão template</h1>
                 </a>
             </div>
             <div class="nav-list" :class="{ open: isMenuOpen }">
@@ -85,7 +85,7 @@ header {
 .nav-list ul {
     display: flex;
     justify-content: center;
-    list-style: none;
+    list-style: none; 
 }
 
 .nav-item {

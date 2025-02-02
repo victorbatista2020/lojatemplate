@@ -20,10 +20,18 @@
                     <img src="./imgs/slides/barbeiro2.png" alt="Imagem 4">
                 </div>
             </div>
-
-
         </div>
+
+
+
+
+
     </div>
+    <div class="text">
+
+        oiiiiiiiiii
+    </div>
+
 </template>
 
 
