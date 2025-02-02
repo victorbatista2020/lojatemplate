@@ -20,17 +20,18 @@
                     <img src="./imgs/slides/barbeiro2.png" alt="Imagem 4">
                 </div>
             </div>
+            <div class="about">
+                <h2>SALÃO</h2>
+
+                Aqui cada cliente é tratado com atenção personalizada, buscando sempre realçar sua autoestima e estilo único.
+                A equipe oferece cortes modernos, tratamentos exclusivos e dicas de cuidados,
+                garantindo que todos saiam satisfeitos e confiantes. O objetivo é criar uma experiência de transformação
+                que vai além da estética
+            </div>
         </div>
 
-
-
-
-
     </div>
-    <div class="text">
 
-        oiiiiiiiiii
-    </div>
 
 </template>
 
