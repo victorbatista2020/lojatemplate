@@ -9,7 +9,6 @@
 
 </template>
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue'
 import About from './components/About.vue'
 import Service from './components/Service.vue'
