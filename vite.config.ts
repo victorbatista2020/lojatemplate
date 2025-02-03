@@ -1,8 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-
 
 export default defineConfig({
   plugins: [
@@ -14,8 +12,9 @@ export default defineConfig({
     }
   },
   server: {
-    port: 8080, 
-    open: true,     
-  }
+    port: 8080,
+    open: true,
+  },
+  base: '/loja-template/',
 
 })
