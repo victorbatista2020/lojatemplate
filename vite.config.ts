@@ -15,6 +15,10 @@ export default defineConfig({
     port: 8080,
     open: true,
   },
+  build: {
+    target: 'esnext',  // Certifica que o código seja transpilado para ESNext.
+    sourcemap: true,   // Adiciona map de origem para facilitar o debug.
+  },
   base: '/loja-template/',
 
 })
