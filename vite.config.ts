@@ -3,7 +3,12 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-   base: '/loja-template/',
+
+  base: process.env.NODE_ENV === 'production'
+  ? '/loja-template/'
+  : '/',
+
+ 
   plugins: [
     vue(),
   ],
@@ -20,6 +25,7 @@ export default defineConfig({
     target: 'esnext',  // Certifica que o código seja transpilado para ESNext.
     sourcemap: true,   // Adiciona map de origem para facilitar o debug.
   },
- 
+
+   
 
 })
