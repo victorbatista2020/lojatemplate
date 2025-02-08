@@ -2,12 +2,13 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/loja-template/'
+    : '/'
+}
+
 export default defineConfig({
-
-  base: process.env.NODE_ENV === 'production'
-  ? '/loja-template/'
-  : '/',
-
  
   plugins: [
     vue(),
