@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build --force"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "run-p type-check build-only",
+  "build-only": "vite build",
+  "type-check": "vue-tsc --build --force",
+  "preview": "vite preview",
+  "deploy": "npm run build && gh-pages -d dist"
+   },
   "dependencies": {
     "@vue/compiler-sfc": "^3.5.13",
     "vue": "^3.4.29",
