@@ -9,6 +9,7 @@
     <style scope>
     
     .contact-content{
+        text-align: center;
         margin-right: 5px;
         margin-left: 5px;
         padding-top: 100px;

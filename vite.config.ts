@@ -2,14 +2,10 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/loja-template/'
-    : '/'
-}
-
+// Use a opção 'base' para configurar o caminho público no Vite
 export default defineConfig({
- 
+  base: '/lojatemplate/',
+    
   plugins: [
     vue(),
   ],
@@ -23,10 +19,7 @@ export default defineConfig({
     open: true,
   },
   build: {
-    target: 'esnext',  // Certifica que o código seja transpilado para ESNext.
-    sourcemap: true,   // Adiciona map de origem para facilitar o debug.
+    target: 'esnext',
+    sourcemap: true,
   },
-
-   
-
 })

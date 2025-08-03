@@ -42,23 +42,23 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'About',
     setup() {
-        let currentSlide = 1;
-        const totalSlides = 4;
+        let currentSlide = 1
+        const totalSlides = 4
 
         function changeSlide() {
-            currentSlide = (currentSlide % totalSlides) + 1;
-            const slideId = `slide${currentSlide}`;
-            const radioButton = document.getElementById(slideId) as HTMLInputElement;
+            currentSlide = (currentSlide % totalSlides) + 1
+            const slideId = `slide${currentSlide}`
+            const radioButton = document.getElementById(slideId) as HTMLInputElement
             if (radioButton) {
-                radioButton.checked = true;
+                radioButton.checked = true
             }
         }
 
-        setInterval(changeSlide, 5000);
+        setInterval(changeSlide, 5000)
 
-        return {};
+        return {}
     }
-});
+})
 </script>
 
 <style scoped>
