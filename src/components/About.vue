@@ -68,7 +68,7 @@ export default defineComponent({
     padding: 90px 4%;
     margin: 0 5px;
     padding-top: 100px;
-    background-color: red;
+    background-color: rgb(255, 179, 232);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -68,13 +68,6 @@
     text-align: center;
 }
 
-.service-content {
-    padding: 30px 4%;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-top: 10px;
-    background-color: gray;
-}
 
 .services {
     display: flex;

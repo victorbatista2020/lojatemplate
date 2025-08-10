@@ -54,10 +54,10 @@ function closeMenu() {
 <style>
 header {
     padding-top: 0.1rem;
-    background-color: #021da3;
+    background-color: #ad6fad;
     position: fixed;
     box-shadow: 0px 3px 10px #464646;
-    height: 60px;
+    height: 70px;
     width: 100%;
     z-index: 1000;
 }

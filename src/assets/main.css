@@ -12,5 +12,14 @@ html{
 }
 body{
 
-  height: 5000px;
+  
+  background-color: rgb(244, 210, 255);
+}
+
+.service-content {
+  padding: 30px 4%;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 10px;
+  background-color: rgb(248, 213, 242);
 }
