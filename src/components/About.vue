@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="about">
-                <h2>SALÃO</h2>
+                <h2>SALÃOO</h2>
 
                 Aqui cada cliente é tratado com atenção personalizada, buscando sempre realçar sua autoestima e estilo único.
                 A equipe oferece cortes modernos, tratamentos exclusivos e dicas de cuidados,
